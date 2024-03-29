@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Assignment - Object Creation</title>
+</head>
+
+<body>
+  <h1>Student Information</h1>
+  <form action="#" class="form" id="form">
+
+    <div class="form__basic-info">
+      <input type="text" id="name" placeholder="Name" autofocus required />
+      <input type="number" id="age" min="5" max="100" step="1" placeholder="Age" required />
+    </div>
+
+    <div class="form__radio">
+      <input type="radio" id="male" name="sex" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="sex" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" id="nonbinary" name="sex" value="nonbinary" required />
+      <label for="nonbinary">Non-Binary</label>
+    </div>
+
+    <div class="form__major">
+      <label for="major">Choose your major:</label>
+      <select name="major" id="major" required>
+        <option value="">-- Select a major --</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Biology">Biology</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Physics">Physics</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Business">Business</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Sociology">Sociology</option>
+        <option value="History">History</option>
+      </select>
+    </div>
+
+    <div class="form__buttons">
+      <button type="submit" id="submit">Add Student</button>
+      <button type="button" id="display">Display All</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+  <p class="success" id="success">&nbsp;</p>
+  <p class="results" id="results"></p>
+
+  <script src="js/utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
